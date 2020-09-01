@@ -1,0 +1,8 @@
+link
+https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+https://www.jetbrains.com/idea/download/#section=windows
+https://insomnia.rest/download/
+https://git-scm.com/downloads
+
+repo do projeto
+https://github.com/dougllasfps/library-api
