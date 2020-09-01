@@ -1,0 +1,50 @@
+porque testar seu código
+- diminuição de chance de bugs, testes de regressão, menos erros obvios, escrever códigos de alta qualidade
+- refatoração de código e upgrade de dependências de forma segura
+- muitas empresas exigem que desenvolvedores testem seus códigos
+
+desculpas para não testar - mitos
+- meu código está rodando perfeitamente
+- testar é confuso e complicado
+- testar aumenta o tempo de desenvolvimento
+
+tipos de testes
+teste unitário -> teste da menor parte testável de um programa (função ou classe). 
+os módulos são testados separadamente.
+geralmente isolamosa classe que estamos testando e simulamos o comportamento das dependências.
+
+teste de integração -> testa a integração entre duas partes.
+testes que verificam se suas classes se comunicam bem com serviços web, escrevem em arquivos texto, mandam mensagens via socket ..
+
+AssertJ -> biblioteca para assertivas (https://joel-costigliola.github.io/assertj/)
+adicionar no pom.xml
+
+TDD (Test Driven Development)
+- desenvolvimento orientado por testes
+- testes são escritos antes do código de produção
+- escreve o teste que falha -> fazer o teste passar (funcionalidade) -> refatorar
+
+BDD (Behavior Driven Development)
+- escreve testes que qualquer humano pode ler
+- BDD tras não só um estilo de escrever cenários de testes amigável 
+- mas também a ideia do que deve ser feito antes de escrever o codigo que implementa sua funcionalidade
+- modelar comportamento atraves de testes e depois implementa as funcionalidades
+
+Beneficios
+- melhor legibilidade dos testes / melhor manutenibilidade dos testes
+- qualquer ser humano consegue ler / ter ideia do que deve ser feito antes de implementar
+- seus testes são a documentação / manutenção implicita quando requisitos mudaram (por causa da falha do build)
+- não hpa necessidade de documentação extra
+- given (dado) -> when (quando) -> then (entao)
+
+mockito (https://site.mockito.org)
+
+junit 5 (https://junit.org/junit5/docs/current/user-guide/)
+
+
+
+
+
+
+
+
