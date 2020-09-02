@@ -1,0 +1,6 @@
+Criar projeto Spring Boot
+https://spring.io/projects/spring-boot
+
+adicionar parent do spring boot
+adicionar dependências spring-boot-starter e spring-boot-starter-web
+
