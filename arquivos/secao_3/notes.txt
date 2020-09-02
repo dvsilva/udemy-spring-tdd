@@ -1,0 +1,39 @@
+REST (Representation State Transfer)
+- design de arquitetura construído para servir aplicações em rede
+- é um guia, não um padrão
+- stateless (não guarda estado) - cada requisição deve conter o que é necessário para ela
+- interface uniforme - cada resource tem uma URL específica e são representados por HTLML, XML, JSON, TXT .. 
+- contrato entre cliente e servidor
+- modelo request -> response - trocar mensagens e retorna código de status dependendo do resultado da requisição
+
+Verbos HTTP - intenção ao executar a URL
+- GET - obter um recurso / envia parametros de busca / retorna código 200 (Ok) para sucesso ou 404 (Not found) se não for encontrado
+- POST - criar recurso no servidor / envia o recurso a ser criado / resposta com código 201 (Created)
+- PUT - atualizar recurso / envia o recurso com as informações e atraves da url o identificador do recurso / retorna código 200 (Ok)
+- DELETE - deletar um recurso / envia o identificador atraves da url / responsta com 204 (No content)
+
+Modelagem de recursos
+- ação no verbo HTTP
+- URL usar substantivo
+- subrecurso (cliente tem diversos enderecos) - clientes/1/enderecos
+
+Códigos de status de resposta HTTP (https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status)
+- recebe junto com a resposta
+- informativa (1xx), sucesso (2xx), redirecionamento (3xx), erro do cliente (4xx) e erro no servidor (5xx)
+
+- verbo   | sucesso          | erro
+- post    | 201 (created)    | 400 (bad request)
+- get     | 200 (ok)         | 404 (not found)
+- delete  | 204 (no content) | 400 (bad request) ou 404 (not found)
+- put     | 200 (ok)         | 400 (bad request) ou 404 (not found)
+
+- asincrona com post -> accepted (alguma ação foi iniciada no servidor)
+
+Representação de recursos
+
+- JSON (Javascript Object Notation)
+- Leitura mais simples / analisador (parsing) mais fácil / suporta objetos / é tipado
+- velocidade maior na execução e transporte de dados / arquivo com tamanho reduzido
+
+- XML 
+- utilizado no SOAP
