@@ -1,0 +1,15 @@
+MVC - Controllers, Services e Repositórios
+
+desenvolver a api de livros (books api)
+
+criar projeto com as seguintes dependencias:
+starter-web
+starter-validation
+starter-data-jpa
+devtools
+h2database
+lombok
+
+biblioteca para fazer parse do model <-> dto (http://modelmapper.org/)
+link github -> https://github.com/
+
