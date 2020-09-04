@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.validation.BindingResult;
+import org.springframework.web.server.ResponseStatusException;
 
 import com.cursodsouza.libraryapi.exception.BussinessException;
 
@@ -18,6 +19,10 @@ public class ApiErrors {
 
 	public ApiErrors(BussinessException ex) {
 		this.errors = Arrays.asList(ex.getMessage());
+	}
+
+	public ApiErrors(ResponseStatusException ex) {
+		this.errors = Arrays.asList(ex.getReason());
 	}
 
 	public List<String> getErrors() {

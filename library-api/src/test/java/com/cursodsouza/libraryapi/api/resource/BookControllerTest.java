@@ -36,7 +36,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 // @RunWith(SpringRunner.class)
 @ExtendWith(SpringExtension.class) // mini contexto com classes que pedir para rodar os testes
 @ActiveProfiles("test") // configurar ambiente de tesste
-@WebMvcTest
+@WebMvcTest(controllers = BookController.class) // subir apenas um controller
 @AutoConfigureMockMvc // configura objeto para realizar as requisicoes
 public class BookControllerTest {
 
@@ -251,7 +251,6 @@ public class BookControllerTest {
 				.andExpect(jsonPath("totalElements").value(1))
 				.andExpect(jsonPath("pageable.pageSize").value(100))
 				.andExpect(jsonPath("pageable.pageNumber").value(0));
-		
 	}
 	
 	private BookDTO createNewBook() {

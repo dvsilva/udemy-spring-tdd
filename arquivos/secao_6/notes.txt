@@ -1,0 +1,5 @@
+loan-api -> api de emprestimos de livros
+
+put -> atualiza todo o recurso
+patch -> atualizar parte do recurso
+
