@@ -1,0 +1,17 @@
+subrecurso (recurso que depende de outro)
+@GetMapping("{id}/loans") -> listar os emprestimos de um livro
+
+agendamento de tarefas (envio de e-mails para emprestimos não devolvidos)
+http://www.cronmaker.com/;jsessionid=node018s0j1r4nrf5r17rep22hr7w41119991.node0?0
+
+adicionar anotacao na classe aplication
+@EnableScheduling
+
+criar metodo
+private static final String CRON_LATE_LOANS = "0 0 0 1/1 * ?";
+@Scheduled(cron = CRON_LATE_LOANS)
+public void sendMailToLateLoans() {
+}
+
+adicionar starter de email spring-boot-starter-mail
+
