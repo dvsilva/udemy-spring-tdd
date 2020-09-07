@@ -28,11 +28,14 @@ import com.cursodsouza.libraryapi.model.entity.Loan;
 import com.cursodsouza.libraryapi.service.BookService;
 import com.cursodsouza.libraryapi.service.LoanService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/api/loans")
 @RequiredArgsConstructor
+@Api("Loans API")
 public class LoanController {
 	
 	private final LoanService service;
@@ -41,6 +44,7 @@ public class LoanController {
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
+	@ApiOperation("Create a loan")
 	public Long create(@RequestBody LoanDTO dto) {
 		Book book = bookService
 				.getBookByIsbn(dto.getIsbn())
@@ -54,6 +58,7 @@ public class LoanController {
 	}
 	
 	@PatchMapping("{id}")
+	@ApiOperation("Return a book")
 	public Loan returnBook(@PathVariable Long id, @RequestBody ReturnedLoadDTO dto) {
 		Loan loan = service.getById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
 		loan.setReturned(dto.getReturned());
@@ -61,6 +66,7 @@ public class LoanController {
 	}
 
 	@GetMapping
+	@ApiOperation("Find loans by params")
 	public Page<LoanDTO> find(LoanFilterDTO dto, Pageable pageRequest) {
 		Page<Loan> result = service.find(dto, pageRequest);
 		

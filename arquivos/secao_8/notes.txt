@@ -1,0 +1,11 @@
+link https://swagger.io/
+
+criar classe SwaggerConfig com anotações @EnableSwagger2 @Configuration
+configurar docket, apiInfo e contact
+
+acessar por localhost:8080/swagger-ui.html
+
+utilizar anotações 
+@Api("Loans API") -> descrever classe controler
+@ApiOperation("Create a loan") -> descrever metodos
+@ApiResponses(@ApiResponse(code = 204, message = "Book successfully deleted")) -> detalhar resposta da operação

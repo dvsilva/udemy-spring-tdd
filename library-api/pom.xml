@@ -9,11 +9,12 @@
 		<version>2.3.3.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>com.cursodsouza</groupId>
 	<artifactId>library-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>library-api</name>
-	<description>API do projeto de bibliotecas</description>
+	<description>Projeto de controle de aluguel de livros</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -76,6 +77,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
+		
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
