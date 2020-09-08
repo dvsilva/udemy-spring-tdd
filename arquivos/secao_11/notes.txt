@@ -1,0 +1,45 @@
+cobertura de código
+
+jacoco -> relatorio de cobertura de código
+plugin -> https://www.eclemma.org/jacoco/trunk/doc/maven.html
+
+configuração do projeto (https://github.com/codecov/example-java)
+adicionar plugin do build no pom.xml
+
+<plugin>
+	<groupId>org.jacoco</groupId>
+	<artifactId>jacoco-maven-plugin</artifactId>
+	<version>0.8.5</version>
+	<executions>
+		<execution>
+			<goals>
+				<goal>prepare-agent</goal>
+			</goals>
+		</execution>
+		<execution>
+			<id>report</id>
+			<phase>test</phase>
+			<goals>
+				<goal>report</goal>
+			</goals>
+		</execution>
+	</executions>
+</plugin>
+
+executar com comando -> mvn test
+
+ferramenta para obter cobertura de código -> https://codecov.io/
+
+alterar arquivo .travis.yml
+
+language: java
+jdk:
+  - oraclejdk8
+dist: trusty
+before_install:
+ - cd library-api
+ - chmod +x mvnw
+after_success:
+ - bash < (curl -s https://codecov.io/bash)
+
+
