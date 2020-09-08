@@ -1,4 +1,4 @@
-criar arquivo travis.yml
+criar arquivo .travis.yml
 
 language: java
 jdk:
