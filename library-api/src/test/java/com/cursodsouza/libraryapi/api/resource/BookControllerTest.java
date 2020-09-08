@@ -30,6 +30,7 @@ import com.cursodsouza.libraryapi.api.dto.BookDTO;
 import com.cursodsouza.libraryapi.exception.BussinessException;
 import com.cursodsouza.libraryapi.model.entity.Book;
 import com.cursodsouza.libraryapi.service.BookService;
+import com.cursodsouza.libraryapi.service.LoanService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 
@@ -49,6 +50,9 @@ public class BookControllerTest {
 	
 	@MockBean
 	BookService service;
+	
+	@MockBean
+	LoanService loanService;
 	
 	@Test
 	@DisplayName("Deve criar um livro com sucesso.")

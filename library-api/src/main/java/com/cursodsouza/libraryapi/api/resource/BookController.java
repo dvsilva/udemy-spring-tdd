@@ -42,9 +42,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class BookController {
 
-	private BookService service;
-	private ModelMapper modelMapper;
-	private LoanService loanService;
+	private final BookService service;
+	private final ModelMapper modelMapper;
+	private final LoanService loanService;
 
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)

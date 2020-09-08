@@ -987,3 +987,99 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 2020-09-08 16:58:22.532  WARN 10536 --- [RMI TCP Connection(8)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
 2020-09-08 16:58:22.551  INFO 10536 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-09-08 16:58:22.556  INFO 10536 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-09-08 18:22:24.514  INFO 12664 --- [main] c.c.l.api.resource.BookControllerTest    : Starting BookControllerTest on DESKTOP-5MDAQJ8 with PID 12664 (started by danyl in D:\Udemy\SpringTDD\library-api)
+2020-09-08 18:22:24.516  INFO 12664 --- [main] c.c.l.api.resource.BookControllerTest    : The following profiles are active: test
+2020-09-08 18:22:32.872  INFO 12664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:22:33.742  INFO 12664 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-09-08 18:22:33.742  INFO 12664 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-09-08 18:22:33.794  INFO 12664 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 51 ms
+2020-09-08 18:22:33.976  INFO 12664 --- [main] c.c.l.api.resource.BookControllerTest    : Started BookControllerTest in 11.361 seconds (JVM running for 17.399)
+2020-09-08 18:22:35.346  INFO 12664 --- [main] c.c.l.api.resource.BookController        : Updating book of id 1 
+2020-09-08 18:22:35.559  INFO 12664 --- [main] c.c.l.api.resource.BookController        : Updating book of id 1 
+2020-09-08 18:22:35.614  INFO 12664 --- [main] c.c.l.api.resource.BookController        : Create a book for isbn 001 
+2020-09-08 18:22:35.648  INFO 12664 --- [main] c.c.l.api.resource.BookController        : Obtaining details for book id 1 
+2020-09-08 18:22:35.670  INFO 12664 --- [main] c.c.l.api.resource.BookController        : Deleting book of id 1 
+2020-09-08 18:22:35.705  INFO 12664 --- [main] c.c.l.api.resource.BookController        : Deleting book of id 1 
+2020-09-08 18:22:35.742  INFO 12664 --- [main] c.c.l.api.resource.BookController        : Obtaining details for book id 1 
+2020-09-08 18:22:36.091  INFO 12664 --- [main] c.c.l.api.resource.BookController        : Create a book for isbn 001 
+2020-09-08 18:22:36.152  INFO 12664 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:23:55.807  INFO 13080 --- [main] c.c.l.api.resource.BookControllerTest    : Starting BookControllerTest on DESKTOP-5MDAQJ8 with PID 13080 (started by danyl in D:\Udemy\SpringTDD\library-api)
+2020-09-08 18:23:55.822  INFO 13080 --- [main] c.c.l.api.resource.BookControllerTest    : The following profiles are active: test
+2020-09-08 18:23:59.719  INFO 13080 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:24:00.251  INFO 13080 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-09-08 18:24:00.252  INFO 13080 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-09-08 18:24:00.278  INFO 13080 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 26 ms
+2020-09-08 18:24:00.355  INFO 13080 --- [main] c.c.l.api.resource.BookControllerTest    : Started BookControllerTest in 5.427 seconds (JVM running for 7.448)
+2020-09-08 18:24:01.098  INFO 13080 --- [main] c.c.l.api.resource.BookController        : Updating book of id 1 
+2020-09-08 18:24:01.188  INFO 13080 --- [main] c.c.l.api.resource.BookController        : Updating book of id 1 
+2020-09-08 18:24:01.213  INFO 13080 --- [main] c.c.l.api.resource.BookController        : Create a book for isbn 001 
+2020-09-08 18:24:01.267  INFO 13080 --- [main] c.c.l.api.resource.BookController        : Obtaining details for book id 1 
+2020-09-08 18:24:01.335  INFO 13080 --- [main] c.c.l.api.resource.BookController        : Deleting book of id 1 
+2020-09-08 18:24:01.361  INFO 13080 --- [main] c.c.l.api.resource.BookController        : Deleting book of id 1 
+2020-09-08 18:24:01.378  INFO 13080 --- [main] c.c.l.api.resource.BookController        : Obtaining details for book id 1 
+2020-09-08 18:24:01.575  INFO 13080 --- [main] c.c.l.api.resource.BookController        : Create a book for isbn 001 
+2020-09-08 18:24:01.599  INFO 13080 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:24:20.002  INFO 6624 --- [main] c.c.l.api.resource.BookControllerTest    : Starting BookControllerTest on DESKTOP-5MDAQJ8 with PID 6624 (started by danyl in D:\Udemy\SpringTDD\library-api)
+2020-09-08 18:24:20.005  INFO 6624 --- [main] c.c.l.api.resource.BookControllerTest    : The following profiles are active: test
+2020-09-08 18:24:23.063  INFO 6624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:24:23.524  INFO 6624 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-09-08 18:24:23.525  INFO 6624 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-09-08 18:24:23.546  INFO 6624 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 21 ms
+2020-09-08 18:24:23.615  INFO 6624 --- [main] c.c.l.api.resource.BookControllerTest    : Started BookControllerTest in 4.313 seconds (JVM running for 6.17)
+2020-09-08 18:24:24.259  INFO 6624 --- [main] c.c.l.api.resource.BookController        : Updating book of id 1 
+2020-09-08 18:24:24.359  INFO 6624 --- [main] c.c.l.api.resource.BookController        : Updating book of id 1 
+2020-09-08 18:24:24.390  INFO 6624 --- [main] c.c.l.api.resource.BookController        : Create a book for isbn 001 
+2020-09-08 18:24:24.423  INFO 6624 --- [main] c.c.l.api.resource.BookController        : Obtaining details for book id 1 
+2020-09-08 18:24:24.436  INFO 6624 --- [main] c.c.l.api.resource.BookController        : Deleting book of id 1 
+2020-09-08 18:24:24.456  INFO 6624 --- [main] c.c.l.api.resource.BookController        : Deleting book of id 1 
+2020-09-08 18:24:24.469  INFO 6624 --- [main] c.c.l.api.resource.BookController        : Obtaining details for book id 1 
+2020-09-08 18:24:24.604  INFO 6624 --- [main] c.c.l.api.resource.BookController        : Create a book for isbn 001 
+2020-09-08 18:24:24.634  INFO 6624 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:24:55.373  INFO 2180 --- [main] c.c.l.api.resource.LoanControllerTest    : Starting LoanControllerTest on DESKTOP-5MDAQJ8 with PID 2180 (started by danyl in D:\Udemy\SpringTDD\library-api)
+2020-09-08 18:24:55.375  INFO 2180 --- [main] c.c.l.api.resource.LoanControllerTest    : The following profiles are active: test
+2020-09-08 18:24:58.497  INFO 2180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:24:59.004  INFO 2180 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-09-08 18:24:59.005  INFO 2180 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-09-08 18:24:59.035  INFO 2180 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 30 ms
+2020-09-08 18:24:59.116  INFO 2180 --- [main] c.c.l.api.resource.LoanControllerTest    : Started LoanControllerTest in 4.426 seconds (JVM running for 6.173)
+2020-09-08 18:25:00.191  INFO 2180 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:26:05.219  INFO 12908 --- [main] c.c.l.api.resource.BookControllerTest    : Starting BookControllerTest on DESKTOP-5MDAQJ8 with PID 12908 (started by danyl in D:\Udemy\SpringTDD\library-api)
+2020-09-08 18:26:05.221  INFO 12908 --- [main] c.c.l.api.resource.BookControllerTest    : The following profiles are active: test
+2020-09-08 18:26:08.256  INFO 12908 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:26:08.730  INFO 12908 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-09-08 18:26:08.731  INFO 12908 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-09-08 18:26:08.758  INFO 12908 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 27 ms
+2020-09-08 18:26:08.826  INFO 12908 --- [main] c.c.l.api.resource.BookControllerTest    : Started BookControllerTest in 4.461 seconds (JVM running for 6.445)
+2020-09-08 18:26:09.694  INFO 12908 --- [main] c.c.l.api.resource.BookController        : Updating book of id 1 
+2020-09-08 18:26:09.786  INFO 12908 --- [main] c.c.l.api.resource.BookController        : Updating book of id 1 
+2020-09-08 18:26:09.826  INFO 12908 --- [main] c.c.l.api.resource.BookController        : Create a book for isbn 001 
+2020-09-08 18:26:09.879  INFO 12908 --- [main] c.c.l.api.resource.BookController        : Obtaining details for book id 1 
+2020-09-08 18:26:09.925  INFO 12908 --- [main] c.c.l.api.resource.BookController        : Deleting book of id 1 
+2020-09-08 18:26:09.980  INFO 12908 --- [main] c.c.l.api.resource.BookController        : Deleting book of id 1 
+2020-09-08 18:26:10.020  INFO 12908 --- [main] c.c.l.api.resource.BookController        : Obtaining details for book id 1 
+2020-09-08 18:26:10.207  INFO 12908 --- [main] c.c.l.api.resource.BookController        : Create a book for isbn 001 
+2020-09-08 18:26:10.247  INFO 12908 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:26:44.640  INFO 10172 --- [main] c.c.l.api.resource.BookControllerTest    : Starting BookControllerTest on DESKTOP-5MDAQJ8 with PID 10172 (started by danyl in D:\Udemy\SpringTDD\library-api)
+2020-09-08 18:26:44.644  INFO 10172 --- [main] c.c.l.api.resource.BookControllerTest    : The following profiles are active: test
+2020-09-08 18:26:47.803  INFO 10172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:26:48.262  INFO 10172 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-09-08 18:26:48.263  INFO 10172 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-09-08 18:26:48.289  INFO 10172 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 26 ms
+2020-09-08 18:26:48.366  INFO 10172 --- [main] c.c.l.api.resource.BookControllerTest    : Started BookControllerTest in 4.61 seconds (JVM running for 6.534)
+2020-09-08 18:26:49.495  INFO 10172 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:27:40.503  INFO 15772 --- [main] c.c.l.api.resource.BookControllerTest    : Starting BookControllerTest on DESKTOP-5MDAQJ8 with PID 15772 (started by danyl in D:\Udemy\SpringTDD\library-api)
+2020-09-08 18:27:40.505  INFO 15772 --- [main] c.c.l.api.resource.BookControllerTest    : The following profiles are active: test
+2020-09-08 18:27:43.791  INFO 15772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-08 18:27:44.276  INFO 15772 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-09-08 18:27:44.276  INFO 15772 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-09-08 18:27:44.301  INFO 15772 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 25 ms
+2020-09-08 18:27:44.395  INFO 15772 --- [main] c.c.l.api.resource.BookControllerTest    : Started BookControllerTest in 4.669 seconds (JVM running for 6.718)
+2020-09-08 18:27:45.272  INFO 15772 --- [main] c.c.l.api.resource.BookController        : Updating book of id 1 
+2020-09-08 18:27:45.530  INFO 15772 --- [main] c.c.l.api.resource.BookController        : Updating book of id 1 
+2020-09-08 18:27:45.565  INFO 15772 --- [main] c.c.l.api.resource.BookController        : Create a book for isbn 001 
+2020-09-08 18:27:45.581  INFO 15772 --- [main] c.c.l.api.resource.BookController        : Obtaining details for book id 1 
+2020-09-08 18:27:45.599  INFO 15772 --- [main] c.c.l.api.resource.BookController        : Deleting book of id 1 
+2020-09-08 18:27:45.615  INFO 15772 --- [main] c.c.l.api.resource.BookController        : Deleting book of id 1 
+2020-09-08 18:27:45.627  INFO 15772 --- [main] c.c.l.api.resource.BookController        : Obtaining details for book id 1 
+2020-09-08 18:27:45.684  INFO 15772 --- [main] c.c.l.api.resource.BookController        : Create a book for isbn 001 
+2020-09-08 18:27:45.712  INFO 15772 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
