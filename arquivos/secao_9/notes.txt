@@ -1,0 +1,54 @@
+monitoramento - adicionar dependencia actuator
+spring-boot-starter-actuator
+
+localhost:8080/actuator
+
+adicionar configuração no application.properties
+# incluir todos os endpoints no actuator
+management.endpoints.web.exposure.include=*
+# configurar arquivo de log
+logging.file.name=appfile.log
+
+acessar log
+http://localhost:8080/actuator/logfile
+
+adicionar log com lombok
+
+adicionar anotação na classe -> @Slf4j
+chamar log -> log.info("Create a book");
+
+interface gráfica (https://github.com/codecentric/spring-boot-admin)
+
+criar aplicacao nova 
+adicionar dependencias
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+	<groupId>de.codecentric</groupId>
+	<artifactId>spring-boot-admin-starter-server</artifactId>
+</dependency>
+
+configurar a classe Application com anotações
+@Configuration
+@EnableAutoConfiguration
+@EnableAdminServer
+
+mudar porta no application.properties -> server.port=8081
+
+configurar API adicionando dependencia
+<dependency>
+	<groupId>de.codecentric</groupId>
+	<artifactId>spring-boot-admin-starter-client</artifactId>
+</dependency>
+
+configurar aplicação client no application.properties 
+
+# configurar aplicação client
+spring.boot.admin.client.url=http://localhost:8081
+
+
+
+
+

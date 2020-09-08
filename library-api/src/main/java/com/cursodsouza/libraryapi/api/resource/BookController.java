@@ -33,11 +33,13 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping("/api/books")
 @RequiredArgsConstructor
 @Api("Book API")
+@Slf4j
 public class BookController {
 
 	private BookService service;
@@ -48,6 +50,7 @@ public class BookController {
 	@ResponseStatus(HttpStatus.CREATED)
 	@ApiOperation("Create a book")
 	public BookDTO create(@Valid @RequestBody BookDTO dto) {
+		log.info("Create a book for isbn {} ", dto.getIsbn());
 		Book entity = modelMapper.map(dto, Book.class);
 		entity = service.save(entity);
 		return modelMapper.map(entity, BookDTO.class);
@@ -56,6 +59,7 @@ public class BookController {
 	@GetMapping("{id}")
 	@ApiOperation("Obtains a book details by id")
 	public BookDTO get(@PathVariable Long id) {
+		log.info("Obtaining details for book id {} ", id);
 		return service.getById(id)
 				.map(book -> modelMapper.map(book, BookDTO.class))
 				.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
@@ -66,6 +70,7 @@ public class BookController {
 	@ApiOperation("Deletes a book by id")
 	@ApiResponses(@ApiResponse(code = 204, message = "Book successfully deleted"))
 	public void delete(@PathVariable Long id) {
+		log.info("Deleting book of id {} ", id);
 		Book book = service.getById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
 		service.delete(book);
 	}
@@ -73,6 +78,7 @@ public class BookController {
 	@PutMapping("{id}")
 	@ApiOperation("Updates a book")
 	public BookDTO update(@PathVariable Long id, @Valid @RequestBody BookDTO dto) {
+		log.info("Updating book of id {} ", id);
 		return service.getById(id)
 			.map(book -> {
 				book.setAuthor(dto.getAuthor());
