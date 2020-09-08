@@ -5,3 +5,35 @@ comandos
 heroku login
 heroku create dvsilva-library-api
 git push heroku master
+
+$ cd my-project/
+$ git init
+$ heroku git:remote -a dvsilva-library-api
+Deploy your application
+Commit your code to the repository and deploy it to Heroku using Git.
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+
+deploy pelo github
+
+gerar artefato manualmente 
+executar comandos dentro da pasta do projeto
+
+gerar o arquivo jar
+alterar o packaging para jar
+mvnw clean package
+cd target
+java -jar library-api-0.0.1.SNAPSHOT.jar
+
+gerar o arquivo war
+alterar o packaging para war
+adicionar dependencia spring-boot-starter-tomcat com scope provided
+configurar classe LibraryApiApplication - public class LibraryApiApplication extends SpringBootServletInitializer
+mvnw clean package
+cd target
+java -jar library-api-0.0.1.SNAPSHOT.jar
+
+testando atraves do insomnia
+

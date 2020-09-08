@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "3d1b1f7b-9f63-4cc3-af8e-599b455f2c47",
+		"name": "LibraryApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Book Api",
+			"item": [
+				{
+					"name": "Create a book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Sítio do pica pau amarelo\",\r\n    \"author\":\"Monteiro Lobato\",\r\n    \"isbn\":\"AX321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dvsilva-library-api.herokuapp.com/api/books",
+							"protocol": "https",
+							"host": [
+								"dvsilva-library-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Sítio do pica pau amarelo atualizado\",\r\n    \"author\":\"Monteiro Lobato\",\r\n    \"isbn\":\"AX321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dvsilva-library-api.herokuapp.com/api/books/1",
+							"protocol": "https",
+							"host": [
+								"dvsilva-library-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dvsilva-library-api.herokuapp.com/api/books/1",
+							"protocol": "https",
+							"host": [
+								"dvsilva-library-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://dvsilva-library-api.herokuapp.com/api/books/1",
+							"protocol": "https",
+							"host": [
+								"dvsilva-library-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Loan Api",
+			"item": [
+				{
+					"name": "Create a Loan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isbn\":\"AX321\",\r\n    \"customer\":\"Danyllo Silva\",\r\n    \"email\":\"danyllo@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dvsilva-library-api.herokuapp.com/api/loans",
+							"protocol": "https",
+							"host": [
+								"dvsilva-library-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"loans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Return a book",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"returned\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dvsilva-library-api.herokuapp.com/api/loans/1",
+							"protocol": "https",
+							"host": [
+								"dvsilva-library-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"loans",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find loans",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dvsilva-library-api.herokuapp.com/api/loans?isbn=AX321&customer=Danyllo Silva",
+							"protocol": "https",
+							"host": [
+								"dvsilva-library-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"loans"
+							],
+							"query": [
+								{
+									"key": "isbn",
+									"value": "AX321"
+								},
+								{
+									"key": "customer",
+									"value": "Danyllo Silva"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

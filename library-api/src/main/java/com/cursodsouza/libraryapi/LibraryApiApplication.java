@@ -9,7 +9,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableScheduling
 public class LibraryApiApplication {
-
+// configuracao fazer o build para rodar em um tomcat externo
+// public class LibraryApiApplication extends SpringBootServletInitializer
+	
 	// @Autowired
 	// private EmailService emailService;
 	

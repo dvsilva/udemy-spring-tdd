@@ -59,10 +59,10 @@ public class LoanController {
 	
 	@PatchMapping("{id}")
 	@ApiOperation("Return a book")
-	public Loan returnBook(@PathVariable Long id, @RequestBody ReturnedLoadDTO dto) {
+	public void returnBook(@PathVariable Long id, @RequestBody ReturnedLoadDTO dto) {
 		Loan loan = service.getById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
 		loan.setReturned(dto.getReturned());
-		return service.update(loan);
+		service.update(loan);
 	}
 
 	@GetMapping
