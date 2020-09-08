@@ -1,0 +1,7 @@
+criar arquivo travis.yml
+
+language: java
+jdk:
+  - oraclejdk8
+dist: trusty
+
