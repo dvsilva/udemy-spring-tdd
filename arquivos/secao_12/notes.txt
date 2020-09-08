@@ -1,0 +1,7 @@
+deploy no heroku
+instalar heroku cli
+
+comandos
+heroku login
+heroku create dvsilva-library-api
+git push heroku master
